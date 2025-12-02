@@ -1,5 +1,5 @@
 /*
-  copter specific AP_AdvancedFailsafe class
+  copter specific AP_AdvancedFailsafe class1
  */
 
 #include "Copter.h"
@@ -7,7 +7,7 @@
 #if AP_COPTER_ADVANCED_FAILSAFE_ENABLED
 
 /*
-  setup radio_out values for all channels to termination values
+  setup radio_out values for all channels to termination values2
  */
 void AP_AdvancedFailsafe_Copter::terminate_vehicle(void)
 {
@@ -35,7 +35,7 @@ void AP_AdvancedFailsafe_Copter::terminate_vehicle(void)
 
 void AP_AdvancedFailsafe_Copter::setup_IO_failsafe(void)
 {
-    // setup failsafe for all aux channels
+    // setup failsafe for all aux channels3
     SRV_Channels::set_failsafe_limit(SRV_Channel::k_heli_rsc, SRV_Channel::Limit::TRIM);
     SRV_Channels::set_failsafe_limit(SRV_Channel::k_heli_tail_rsc, SRV_Channel::Limit::TRIM);
     SRV_Channels::set_failsafe_limit(SRV_Channel::k_engine_run_enable, SRV_Channel::Limit::TRIM);
